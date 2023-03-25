@@ -31,13 +31,13 @@ h1 {
     display: flex;
     left: 10em;
     align-items: center;
-    padding-top: 3em;
+    margin-top: 3em;
     position: absolute;
     scroll-snap-align: start;
     font-size: 60px;
 }
 #words {
-    padding-top: 4em;
+    margin-top: 4em;
     font-weight: 500;
     position: absolute;
     display: flex;
@@ -60,7 +60,8 @@ span#words {
   height: 10vh;
 }
 .info {
-  height: 45vh;
+  height: 55vh;
+  width: 1000vh;
   position: relative;
   margin-top: 27em;
   background-image: linear-gradient(to bottom, #ffffff, #8c38ff);
@@ -77,9 +78,9 @@ a {
   font-family: "poppins";
   align-items: center;
   margin-top: 4em;
-  margin-left: 2em;
+  margin-left: 3em;
   position: relative;
-  left: 18em;
+  left: 17em;
   top: 4em;
   font-size: 30px;
   color: #4b00ff;
@@ -89,6 +90,51 @@ a {
 
 #intro {
   scroll-snap-align: start;
+}
+
+
+@media screen and (max-width: 600px) {
+h1 {
+  font-size: 40px;
+  left: 5em;
+    align-items: center;
+    margin-top: 6em;
+}
+
+a {
+  margin-top: 4em;
+  margin-left: 1em;
+  position: relative;
+  left: 4em;
+  top: 4em;
+}
+}
+
+@media screen and (max-width: 280px) {
+h1 {
+  font-size: 40px;
+  left: 1em;
+    align-items: center;
+    margin-top: 6em;
+}
+
+a {
+  margin-top: 4em;
+  margin-left: 0em;
+  position: relative;
+  left: 0em;
+  top: 4em;
+  font-size: 20px;
+  margin: .4em;
+  margin-right: 1.5em;
+}
+}
+
+
+.about {
+  height: 100vh;
+  width: 1000vh;
+  background-color: #8c38ff;
 }
 </style>
                   <!--BODY-->
@@ -103,9 +149,9 @@ a {
     
     <div class="row-outer">
  <div class="container">
-   
+  <section id="intro">
      <div class="animated-heading">
-       <section id="intro">
+       
          <h1>Hello, I'm A <span id="underscore">    _ </span><span id="words">Ui / UX Designer</span></h1>
        </section>
    
@@ -133,11 +179,16 @@ a {
    
        <div class="info">
    <section id="information">
-     <h5>hallo</h5>
+     <h5></h5>
    </section>
 
   
        </div>
+ </div>
+
+
+ <div class="about">
+<p>Hello</p>
  </div>
   </body>
 </html>
