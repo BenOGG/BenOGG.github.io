@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="/favicon (1).ico">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <style>
 * {
@@ -33,7 +33,7 @@ h1 {
     color: #658354;
     font-weight: 500;
     display: flex;
-    left: 10em;
+    left: 05em;
     align-items: center;
     margin-top: 3em;
     position: absolute;
@@ -84,8 +84,8 @@ a {
   margin-top: 4em;
   margin-left: 3em;
   position: relative;
-  left: 17em;
-  top: 4em;
+  left: 7em;
+  top: 2em;
   font-size: 30px;
   color: #658354;
   font-family: 'IBM Plex Sans', sans-serif;
@@ -106,7 +106,7 @@ h1 {
 }
 
 a {
-  margin-top: 4em;
+  margin-top: 0em;
   margin-left: .5em;
   position: relative;
   left: 1em;
@@ -114,9 +114,28 @@ a {
 }
 
 .hire-me {
-  position: relative;
-  left: -.1em;
+  position: absolute;
+  left: 2em;
+  top: 3em;
 }
+
+.img-div {
+  width: 40em;
+  height: auto;
+  position: absolute;
+  left: -9000px;
+  padding-left: 0em;
+  z-index: 100;
+
+}
+
+.paragraph1 {
+  position: absolute;
+  left: -220px;
+  top: 30em;
+  
+}
+
 }
 
 @media screen and (max-width: 280px) {
@@ -136,6 +155,10 @@ a {
   font-size: 20px;
   margin: .4em;
   margin-right: 1.5em;
+}
+
+.img-div {
+  color: white;
 }
 }
 
@@ -157,17 +180,30 @@ a {
 .hire-me {
   color: #3b8132;
   font-size: 30px;
-  margin-left: 2.4em;
+  margin-left: 3 .4em;
   background-color: #8bca84;
   padding-left: .5em;
   padding-right: .5em;
   padding-top: .5em;
   padding-bottom: .5em;
   border-radius: 5px;
-  font-family: 'VT323', monospace;
-  font-weight: 300;
-  letter-spacing: .1em;
+  font-family: 'sans-serif', monospace;
+  font-weight: 900;
+  
+  
+}
 
+.img-div {
+  min-width: 600px;
+  position: absolute;
+  top: 130px;
+margin-left: 70em;
+z-index: 100;
+}
+.paragraph1 {
+  position: absolute;
+  top: 30em;
+  margin-left: 19em;
 }
 </style>
                   <!--BODY-->
@@ -188,7 +224,12 @@ a {
          <h1>Hello, I'm A <span id="underscore">    _ </span><span id="words">Ui / UX Designer</span></h1>
          
         </section>
-   
+        <!------------------------------------>
+        
+        <p class="paragraph1">Lorem ipsum dolor, sit amet consectetur.<br> adipisicing elit Possimus quidem dolorum, voluptatem..<br> sequi praesentium velit! Officia culpa.<br> quis, vel quod laboriosam dolorum, vitae, neque nemo sint esse numquam quas molestiae. </p>
+
+
+        <img data-aos-duration="2000" data-aos="fade-left" class="img-div" src="NOKIA.png" alt="">
    </div>
        </div>
        
@@ -216,8 +257,21 @@ a {
    <section id="information">
      <h5></h5>
    </section>
-   <a class="hire-me" href="#">Hire Me</a>
+   <a class="hire-me" href="https://www.fiverr.com/benjaminom9?public_mode=true"><bold>Hire Me</bold></a>
   
+
+
+
+
+
+   <!--SCROLL IMAGE DIVS----------------------------------------------->
+
+
+
+
+
+
+   <!------------------------------------------------------------------->
        </div>
  </div>
 
@@ -226,5 +280,11 @@ a {
   <p>Lorem ipsum dolor sit amet<br> consectetur adipisicing elit.<br> Architecto quos adipisci amet! Nihil<br> blanditiis eligendi<br> autem ducimus error doloribus <br>dolores dignissimos<br> reiciendis enim, fuga fugia<br>t quae nulla iusto! Ratione, natus!</p>
  </div>
  </div>
+
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script>
+   AOS.init();
+ </script>
+ 
   </body>
 </html>
