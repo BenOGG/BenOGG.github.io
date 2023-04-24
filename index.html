@@ -39,6 +39,7 @@ h1 {
     position: absolute;
     scroll-snap-align: start;
     font-size: 60px;
+    z-index: 100;
 }
 #words {
     margin-top: 4em;
@@ -65,7 +66,7 @@ span#words {
 }
 .info {
   height: 55vh;
-  
+  overflow-x: hidden;
   position: relative;
   margin-top: 27em;
   background-image: linear-gradient(to bottom, #ffffff, #95bb72);
@@ -110,22 +111,24 @@ a {
   margin-left: .5em;
   position: relative;
   left: 1em;
-  top: 4em;
-}
-
-.hire-me {
-  position: absolute;
-  left: 2em;
   top: 3em;
 }
 
+.hire {
+  position: absolute;
+  left: -6em;
+  top: 0em;
+  z-index: 1000;
+}
+
 .img-div {
-  width: 40em;
+  max-width: 100px;
   height: auto;
   position: absolute;
-  left: -9000px;
+  left: -9900px;
   padding-left: 0em;
-  z-index: 100;
+  margin-top: 26em;
+ 
 
 }
 
@@ -177,20 +180,31 @@ a {
   
 }
 
-.hire-me {
-  color: #3b8132;
-  font-size: 30px;
-  margin-left: 3 .4em;
-  background-color: #8bca84;
-  padding-left: .5em;
-  padding-right: .5em;
-  padding-top: .5em;
-  padding-bottom: .5em;
+.hire {
+  font-size: 18px;
+  margin-left: 9.9em;
+  background-color: #658354;
+  padding: 20px;
+  width: 160px;
+  text-align: center;
+  font-family: 'Roboto', monospace;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
   border-radius: 5px;
-  font-family: 'sans-serif', monospace;
-  font-weight: 900;
-  
-  
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+
+.hire:hover, .hire:focus, .hire:active{
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .img-div {
@@ -199,11 +213,18 @@ a {
   top: 130px;
 margin-left: 70em;
 z-index: 100;
+overflow-x: hidden;
 }
 .paragraph1 {
   position: absolute;
   top: 30em;
   margin-left: 19em;
+}
+
+.bio {
+  margin-left: 10em;
+  color: white;
+  font-weight: 600;
 }
 </style>
                   <!--BODY-->
@@ -226,10 +247,10 @@ z-index: 100;
         </section>
         <!------------------------------------>
         
-        <p class="paragraph1">Lorem ipsum dolor, sit amet consectetur.<br> adipisicing elit Possimus quidem dolorum, voluptatem..<br> sequi praesentium velit! Officia culpa.<br> quis, vel quod laboriosam dolorum, vitae, neque nemo sint esse numquam quas molestiae. </p>
+        <p class="paragraph1">Young Irish Front End Website Developer. </p>
 
 
-        <img data-aos-duration="2000" data-aos="fade-left" class="img-div" src="NOKIA.png" alt="">
+        <img   ata-aos-duration="2000" data-aos="fade-left" class="img-div" src="NOKIA.png " alt="" >
    </div>
        </div>
        
@@ -257,7 +278,7 @@ z-index: 100;
    <section id="information">
      <h5></h5>
    </section>
-   <a class="hire-me" href="https://www.fiverr.com/benjaminom9?public_mode=true"><bold>Hire Me</bold></a>
+   <a class="hire" href="https://www.fiverr.com/benjaminom9?public_mode=true"><bold>Hire Me</bold></a>
   
 
 
@@ -277,7 +298,7 @@ z-index: 100;
 
 
  <div class="about">
-  <p>Lorem ipsum dolor sit amet<br> consectetur adipisicing elit.<br> Architecto quos adipisci amet! Nihil<br> blanditiis eligendi<br> autem ducimus error doloribus <br>dolores dignissimos<br> reiciendis enim, fuga fugia<br>t quae nulla iusto! Ratione, natus!</p>
+  <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Architecto quos adipisci amet! Nihil blanditiis eligendi<br> autem ducimus error doloribus dolores dignissimos reiciendis<br> enim, fuga fugiat quae nulla iusto! Ratione, natus!</p>
  </div>
  </div>
 
