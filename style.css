@@ -32,11 +32,12 @@ body {
 
 .learnbutton {
     margin-left: 400px;
-    font-size: 20px;
+    font-size: 16px;
     position: absolute;
     border-style: line;
     border: solid;
     border-width: 1px;
+    border-radius: 5px;
     border-color: black;
     padding-right: 3em;
     padding-left: 1em;
@@ -45,9 +46,8 @@ body {
     color: black;
 }
 .learnimage {
- max-width: 30px;
- position: absolute;
- margin-left: 545px;
+  position: absolute;
+ margin-left: 515px;
 }
 .hr1 {
     width: 345px;
@@ -114,4 +114,11 @@ h2 {
 
 .WebDev {
     margin-left: 400px;
+}
+
+.folder {
+    margin-left: 1250px;
+    position: absolute;
+    top: 100px;
+    z-index: -1;
 }
