@@ -25,9 +25,9 @@
     <div class="navigation">
     <div class="navigation-items">
     <div class="attributes">
-    <a href="#">Home</a>
-    <a href="#">Contact</a>
-    <a href="#">Portfolio</a>
+    <a href="www.benjiweb.xyz">Home</a>
+    <a href="benjiweb.xyz/contact">Contact</a>
+    <a href="https://www.benjiweb.xyz">Portfolio</a>
     </div>
     </div>
     </div>
@@ -42,9 +42,43 @@
     <!--SEE MORE-->
     <div class="learnmore">
         <a class="learnbutton"href="#">Learn More</a>
-        <img style="width: 20px;" class="learnimage"src="arrow.png" alt="Arrow pointing right">
+        <img style="width: 25px;" class="learnimage"src="arrow.png" alt="Arrow pointing right">
     </div>
     <!--FOLDER-->
     <img class="folder" src="Folder.jpg" alt="">
+    <!--IMAGES-->
+    <hr class="pinimageshr">
+    <div class="pintrestimages">
+        <img src="cat.jpg" alt="">
+        <img src="computer.jpg" alt="">
+        <img src="dog.jpg" alt="">
+    </div>
+    <!--About Me-->
+    <div class="things"><h1>Things I Do</h1></div>
+    <div class="container">
+        <div class="front"><h3>Website Development</h3><p>I excel in website development, leveraging my expertise to create engaging and user-friendly web experiences<br> that meet clients' needs and exceed their expectations.</p></div>
+    </div>
+    <div class="container2">
+        <div class="front"><h3>UI/UX Design</h3><p>I excel in website development, leveraging my expertise to create engaging and user-friendly web experiences<br> that meet clients' needs and exceed their expectations.</p></div>
+    </div>
+
+    <!--LOADER-->
+    <div class="loader loader--hidden">
+
+    </div>
+
+    <!--LOADER JS-->
+    <script>
+       window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+
+  loader.classList.add("loader--hidden");
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+  });
+});
+
+    </script>
 </body>
 </html>
