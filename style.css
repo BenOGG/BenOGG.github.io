@@ -12,7 +12,7 @@ body {
 
   .h11 {
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 30px;
+    font-size: 35px;
     position: absolute;
     top: 70px;
     left: 130px;
@@ -22,7 +22,7 @@ body {
 
 .attributes {
     color: black;
-    font-size: 22px;
+    font-size: 35px;
     margin-left: 2em;
     position: relative;
     left: 1020px;
@@ -31,23 +31,32 @@ body {
 }
 
 .learnbutton {
-    margin-left: 400px;
-    font-size: 16px;
+    margin-left: 300px;
+    font-size: 17px;
     position: absolute;
     border-style: line;
     border: solid;
-    border-width: 1px;
+    border-width: 0.1px;
     border-radius: 5px;
-    border-color: black;
-    padding-right: 3em;
+    border-color: gray;
+    padding-right: 8em;
     padding-left: 1em;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     color: black;
+    margin-top: 1px;
+    border: solid;
+    padding: 1rem;
+    display: flex;
+    border-width: 1px 5px 5px 1px;
+    width: 500px;
+    
 }
 .learnimage {
   position: absolute;
- margin-left: 515px;
+ margin-left: 555px;
+ margin-top: 13px;
+ width: 400px;
 }
 .hr1 {
     width: 345px;
@@ -68,7 +77,7 @@ body {
     letter-spacing: 6px;
     transform:rotate(90deg);
     transform-origin:left;  
-    margin-left: 140px;
+    margin-left: 150px;
     margin-top: 200px;
     font-size:x-large;
 
@@ -108,17 +117,103 @@ h2 {
     letter-spacing: 1px;
     font-weight: 500;
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    margin-left: 400px;
+    font-size: 35px;
+    margin-left: 300px;
+    position: relative;
+    top: 100px;
+    
 }
 
 .WebDev {
-    margin-left: 400px;
+    margin-left: 300px;
+    font-size: 50px;
+    margin-top: 100px;
 }
 
 .folder {
-    margin-left: 1250px;
+    margin-left: 1050px;
+    margin-top: 100px;
     position: absolute;
     top: 100px;
-    z-index: -1;
+    width: 600px;
+}
+
+.container {
+    margin-left: 1000px;
+ 
+    border: solid;
+    padding: 2rem;
+    position: absolute;
+    display: flex;
+    border-width: 1px 5px 5px 1px;
+    width: 500px;
+
+}
+
+h2 {
+    font-size: 25px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.things {
+    position: absolute;
+    top: 1830px;
+    font-size: 60px;
+    font-weight: bolder;
+   margin-left: 150px;
+}
+
+.container2 {
+    margin-left: 1100px;
+    margin-top: 200px;
+    border: solid;
+    padding: 2rem;
+    display: flex;
+    border-width: 1px 5px 5px 1px;
+    width: 500px;
+
+}
+
+.pinimageshr {
+    margin-top: 34rem;
+}
+
+.pintrestimages {
+    display: flex;
+    justify-content: space-between;
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    transition: opacity 0.75s, visibility 0.75s;
+}
+.loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+
+}
+.loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #fff;
+    border-top-color: #000;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+    from { transform: rotate(0turn) }
+    to { transform: rotate(1turn) }
 }
